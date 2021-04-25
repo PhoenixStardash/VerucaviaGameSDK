@@ -24,12 +24,11 @@ If you're too lazy to do any thing below, Compiled binaries can be found [here](
 - A sleek, modern look, mimmicing Fluent Design apps seen in Windows 10
 
 ### Planned
-- Add support for Unity3D
 - Add additional command-line parameters
 - Ability to add your own programs
 - Config support
 - Include a custom UE4 editor
-- Creating mods
+- Mod creation
 
 # Credits
 - Microsoft for Fluent Design Icons
