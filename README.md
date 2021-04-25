@@ -1,7 +1,7 @@
 # Verucavia: New Age Official Game SDK
 Welcome to the repository for my SDK!
 
-Compiled binaries can be found [here](http://verucaviagame.ddns.net:90/files/apps/release/VerucaviaGameSDK-2.2_release.7z)
+If you're too lazy to do any thing below, Compiled binaries can be found [here](http://verucaviagame.ddns.net:90/files/apps/release/VerucaviaGameSDK-2.2_release.7z)
 
 # Getting Started
 ### Pre-Requisies
