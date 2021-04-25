@@ -1,0 +1,37 @@
+﻿<fw:AcrylicWindow x:Name="MainAppWindow" x:Class="VerucavaGameSDK.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+        xmlns:local="clr-namespace:VerucavaGameSDK"
+        xmlns:views="clr-namespace:VerucavaGameSDK.Views"
+        xmlns:viewmodels="clr-namespace:VerucavaGameSDK.ViewModels"
+        mc:Ignorable="d"
+        Title="Verucavia: New Age Internal Developer SDK" Height="900" Width="1600" ResizeMode="CanMinimize" NoiseOpacity="0" Icon="Icons/verucaviagame1_pub.ico" KeyDown="MainAppWindow_KeyDown">
+
+    <Grid fw:PointerTracker.Enabled="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="635*"/>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="941*"/>
+        </Grid.ColumnDefinitions>
+        <ContentControl Content="{Binding SelectedViewModel}" Grid.ColumnSpan="3"/>
+        <Canvas x:Name="MainWindowCanvas" HorizontalAlignment="Left" Height="862" Margin="4,4,0,0" VerticalAlignment="Top" Width="1586" Grid.ColumnSpan="3">
+            <Rectangle Fill="#BF383838" Height="897" Stroke="#00000000" Width="338" Canvas.Top="-28" Canvas.Left="-5"/>
+            <Button x:Name="ButtonHome" Content="Home" Canvas.Top="128" Width="332" Height="45" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="18" FontFamily="Segoe UI Semilight" Margin="0" Padding="-180,0,0,0" Canvas.Left="-1" Command="{Binding UpdateViewCommand}" CommandParameter="Home"/>
+            <Image x:Name="home_icon" Height="20" Canvas.Left="15" Canvas.Top="141" Width="20" Source="Icons/FluentDesign/ic_fluent_home_20_white.ico"/>
+            <Image x:Name="logo" Height="64" Canvas.Left="4" Canvas.Top="9" Width="64" Source="Icons/verucaviagame1_pub.ico"/>
+            <TextBlock Canvas.Left="69" TextWrapping="Wrap" Text="Verucavia: New Age SDK" Canvas.Top="19" FontSize="20" FontWeight="Bold" Foreground="White"/>
+            <TextBlock x:Name="rewrittentext" Canvas.Left="72" TextWrapping="Wrap" Text="REWRITTEN" Canvas.Top="42" FontWeight="Bold" Foreground="White"/>
+            <Button x:Name="ButtonApps" Content="Apps" Canvas.Top="173" Width="332" Height="45" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="18" FontFamily="Segoe UI Semilight" Margin="0" Padding="-190,0,0,0" Canvas.Left="-1" Command="{Binding UpdateViewCommand}" CommandParameter="Apps"/>
+            <Image x:Name="apps_icon" Height="20" Canvas.Left="15" Canvas.Top="187" Width="20" Source="Icons/FluentDesign/ic_fluent_apps_20_white.ico"/>
+            <Button x:Name="ButtonGameEngine" Content="Unreal Engine 4" Canvas.Top="218" Width="332" Height="45" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="18" FontFamily="Segoe UI Semilight" Margin="0" Padding="-100,0,0,0" Canvas.Left="-1" Command="{Binding UpdateViewCommand}" CommandParameter="Unreal Engine 4"/>
+            <Image x:Name="apps_icon_Copy" Height="20" Canvas.Left="15" Canvas.Top="231" Width="20" Source="Icons/ue4_20.ico"/>
+            <Image x:Name="apps_icon_Copy1" Height="20" Canvas.Left="15" Canvas.Top="279" Width="20" Source="Icons/FluentDesign/ic_fluent_book_information_20_white.ico" RenderTransformOrigin="0.6,2.617"/>
+            <Button x:Name="ButtonAbout" Content="About" Canvas.Top="266" Width="332" Height="45" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="18" FontFamily="Segoe UI Semilight" Margin="0" Padding="-175,0,0,0" Command="{Binding UpdateViewCommand}" CommandParameter="About" Canvas.Left="-1"/>
+            <Image Source="Views/ic_fluent_settings_32.png" RenderTransformOrigin="0.927,0.302" Canvas.Left="19" Canvas.Top="818" Height="28" Width="28"/>
+            <Button x:Name="ButtonSettings" Content="" Canvas.Top="815" Width="34" Height="34" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="18" FontFamily="Segoe UI Semilight" Margin="0" Padding="-175,0,0,0" Canvas.Left="16" Click="ButtonSettings_Click" ToolTip="Configure Application Settings"/>
+        </Canvas>
+    </Grid>
+</fw:AcrylicWindow>

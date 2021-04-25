@@ -1,0 +1,52 @@
+﻿<fw:AcrylicWindow x:Class="VerucaviaGameSDK.ConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+        xmlns:local="clr-namespace:VerucavaGameSDK"
+        xmlns:views="clr-namespace:VerucavaGameSDK.Views"
+        xmlns:viewmodels="clr-namespace:VerucavaGameSDK.ViewModels"
+        mc:Ignorable="d"
+        Title="Settings" Icon="/Icons/FluentDesign/ic_fluent_settings_32.ico" ResizeMode="CanMinimize" NoiseOpacity="0" Height="720" Width="1280" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+    <Grid x:Name="BuildArgsText" Background="#701E1E1E">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="307*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="473*"/>
+            <RowDefinition Height="217*"/>
+        </Grid.RowDefinitions>
+        <Image Source="Views/ic_fluent_folder_48_regular.png" RenderTransformOrigin="5.688,0.438" Grid.Column="1" Margin="1018,294,178,146"/>
+        <Image Source="Views/ic_fluent_folder_48_regular.png" RenderTransformOrigin="5.688,0.438" Grid.Column="1" Margin="1015,97,181,343"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="1039,162,0,0" Grid.Row="1" VerticalAlignment="Top" Width="24" Source="ic_fluent_save_24_regular.png" RenderTransformOrigin="8.348,3.261"/>
+        <Image Source="Views/ic_fluent_folder_48_regular.png" RenderTransformOrigin="5.688,0.438" Grid.Column="1" Margin="1015,440,181,0"/>
+        <Image Source="Views/ic_fluent_folder_48_regular.png" RenderTransformOrigin="5.688,0.438" Grid.Column="1" Margin="1015,139,181,301"/>
+        <Button x:Name="BrowseFile" Content="" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="0" Click="BrowseButton_Click" Foreground="White" Margin="1012,96,178,338" Grid.Column="1" Width="38" Height="38" ToolTip="Browse for..."/>
+        <TextBox x:Name="ProjectPath" HorizontalAlignment="Left" Height="34" Margin="140,96,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="848" Padding="10,5,0,-40" IsReadOnly="True" Background="#702D2D2D" Grid.Column="1" BorderBrush="{x:Null}" Foreground="White" Initialized="ProjectPath_Init" ScrollViewer.CanContentScroll="True" FontSize="13"/>
+        <TextBlock x:Name="ProjectPathText" HorizontalAlignment="Left" Margin="34,102,0,0" TextWrapping="Wrap" Text="PROJECT" VerticalAlignment="Top" FontSize="14" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="EditorPath" HorizontalAlignment="Left" Height="34" Margin="140,138,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="848" Padding="10,5,0,-40" Background="#702D2D2D" Grid.Column="1" BorderBrush="{x:Null}" Foreground="White" IsReadOnly="True" Initialized="EditorPath_Init" ScrollViewer.CanContentScroll="True" FontSize="13"/>
+        <TextBlock x:Name="EditorPathText" HorizontalAlignment="Left" Margin="34,144,0,0" TextWrapping="Wrap" Text="EDITOR EXECUTABLE" VerticalAlignment="Top" FontSize="14" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="Category01Text" HorizontalAlignment="Left" Margin="34,56,0,0" TextWrapping="Wrap" Text="Editor &amp; Project Settings" VerticalAlignment="Top" RenderTransformOrigin="-0.173,0.75" FontSize="16" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="EditorArguments" HorizontalAlignment="Left" Margin="34,186,0,0" TextWrapping="Wrap" Text="EDITOR ARGUMENTS" VerticalAlignment="Top" FontSize="14" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="Category02Text" HorizontalAlignment="Left" Margin="34,257,0,0" TextWrapping="Wrap" Text="Game Configuration" VerticalAlignment="Top" RenderTransformOrigin="-0.173,0.75" FontSize="16" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="GamePath" HorizontalAlignment="Left" Height="34" Margin="140,295,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="848" Padding="10,5,0,-40" IsReadOnly="True" Background="#702D2D2D" Grid.Column="1" BorderBrush="{x:Null}" Initialized="GamePath_Initalized" Foreground="White" ScrollViewer.CanContentScroll="True" FontSize="13"/>
+        <TextBlock x:Name="GameExecPath" HorizontalAlignment="Left" Margin="34,301,0,0" TextWrapping="Wrap" Text="GAME EXECUTABLE" VerticalAlignment="Top" FontSize="14" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="GameArgs1" HorizontalAlignment="Left" Height="34" Margin="140,340,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="848" Padding="10,5,0,-40" Background="#702D2D2D" Grid.Column="1" BorderBrush="{x:Null}" Foreground="White" Initialized="GameArgs1_Init" ScrollViewer.CanContentScroll="True" FontSize="13"/>
+        <TextBlock x:Name="GameArgs" HorizontalAlignment="Left" Margin="34,346,0,0" TextWrapping="Wrap" Text="ARGUMENTS" VerticalAlignment="Top" FontSize="14" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="Category03Build" HorizontalAlignment="Left" Margin="34,402,0,0" TextWrapping="Wrap" Text="Building (Game Only)" VerticalAlignment="Top" RenderTransformOrigin="-0.173,0.75" FontSize="16" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="UATPath1" HorizontalAlignment="Left" Height="34" Margin="140,438,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="848" Padding="10,5,0,-40" IsReadOnly="True" Background="#702D2D2D" Grid.Column="1" BorderBrush="{x:Null}" Foreground="White" ScrollViewer.CanContentScroll="True" FontSize="13"/>
+        <TextBlock x:Name="UATPathText" HorizontalAlignment="Left" Margin="34,444,0,0" TextWrapping="Wrap" Text="AUTOMATION TOOL" VerticalAlignment="Top" FontSize="14" Foreground="White" Grid.ColumnSpan="2" Width="145"/>
+        <TextBlock x:Name="BuildArguments" HorizontalAlignment="Left" Margin="36,16,0,0" TextWrapping="Wrap" Text="BUILD ARGUMENTS" VerticalAlignment="Top" FontSize="14" Foreground="White" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="UATArgs" HorizontalAlignment="Left" Height="34" Margin="140,10,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="848" Padding="10,5,0,-40" Background="#702D2D2D" Grid.Row="1" Grid.Column="1" BorderBrush="{x:Null}" Foreground="White" ScrollViewer.CanContentScroll="True" FontSize="13"/>
+        <Button x:Name="SaveSettingsToFile" Content="SAVE SETTINGS" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" Padding="40,0,0,0" Click="Save_Click" Foreground="White" Margin="1023,156,34,24" Grid.Row="1" RenderTransformOrigin="0.375,0.03" Grid.Column="1"/>
+        <Button x:Name="BrowseFile02" Content="" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="0" Click="BrowseButton2_Click" Foreground="White" Margin="1015,291,175,143" Grid.Column="1" Width="38" Height="38" ToolTip="Browse for..."/>
+        <Button x:Name="BrowseFile03" Content="" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="0" Click="BrowseButton2_Click" Foreground="White" Margin="1012,438,178,213" Grid.Column="1" Width="38" Height="38" ToolTip="Browse for..." Grid.RowSpan="2"/>
+        <Button x:Name="BrowseFile4" Content="" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="0" Click="BrowseButton4_Click" Foreground="White" Margin="1012,138,178,296" Grid.Column="1" Width="38" Height="38" ToolTip="Browse for..."/>
+        <Button x:Name="BrowseFile4_Copy" Content="" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="0" Click="BrowseButton4_Click" Foreground="White" Margin="1013,139,179,297" Grid.Column="1" Width="38" Height="38" ToolTip="Browse for..."/>
+        <ScrollViewer Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="140,180,0,0" VerticalAlignment="Top" Width="848" CanContentScroll="True" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Hidden">
+            <TextBox x:Name="EditorArgs" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="848" Padding="10,5,0,-40" Background="#702D2D2D" Grid.Column="1" BorderBrush="{x:Null}" Foreground="White" ScrollViewer.CanContentScroll="False" FontSize="13" Initialized="EditorArgs_Init"/>
+        </ScrollViewer>
+    </Grid>
+</fw:AcrylicWindow>

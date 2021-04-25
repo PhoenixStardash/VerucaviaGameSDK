@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="VerucavaGameSDK.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VerucavaGameSDK.Views"
+             xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="1600">
+    <Grid>
+        <Canvas x:Name="MainWindowCanvas" HorizontalAlignment="Left" Height="862" Margin="4,4,0,0" VerticalAlignment="Top" Width="1585.8">
+            <Rectangle Fill="#BF151515" Height="903" Canvas.Left="332" Stroke="#00000000" Width="1280" Canvas.Top="-30" Opacity="0"/>
+            <TextBlock x:Name="CurrentPage" Canvas.Left="1500" TextWrapping="Wrap" Text="HOME" Canvas.Top="31" FontSize="14" FontWeight="Bold" Foreground="White"/>
+            <TextBlock Canvas.Left="375" TextWrapping="Wrap" Text="Welcome!" Canvas.Top="31" FontSize="32" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Width="387"/>
+            <TextBlock Canvas.Left="375" TextWrapping="Wrap" Canvas.Top="72" FontSize="16" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Height="90" Width="700"><Run FontWeight="Normal" Text="Hello there and Welcome to the SDK, to get started, Click on either Apps or Unreal Engine 4"/></TextBlock>
+            <TextBlock Canvas.Left="375" TextWrapping="Wrap" Text="Changelog" Canvas.Top="175" FontSize="32" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Width="387"/>
+            <TextBlock Canvas.Left="393" TextWrapping="Wrap" Canvas.Top="218" FontSize="16" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Height="21" Width="221" Text="Major Release - Version 2.0"/>
+            <TextBlock Canvas.Left="407" TextWrapping="Wrap" Canvas.Top="245" FontSize="16" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Height="124" Width="700"><Run FontWeight="Normal" Text="- Total rewrite of the codebase"/><LineBreak/><Run FontWeight="Normal" Text="- You can now switch in between each view"/><LineBreak/><Run FontWeight="Normal" Text="- Settings Tab removed temporarily"/><LineBreak/><Run FontWeight="Normal" Text="- Added Unreal Engine 4 Tab"/><LineBreak/><Run FontWeight="Normal" Text="- We are now on github"/></TextBlock>
+            <TextBlock Canvas.Left="393" TextWrapping="Wrap" Canvas.Top="369" FontSize="16" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Height="21" Width="221" Text="Patch Release - Version 2.1"/>
+            <TextBlock Canvas.Left="407" TextWrapping="Wrap" Canvas.Top="392" FontSize="16" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Height="124" Width="700"><Run FontWeight="Normal" Text="- Compiled to 64-bit"/><LineBreak/><Run FontWeight="Normal" Text="- Added &quot;About&quot; section"/><LineBreak/><Run FontWeight="Normal" Text="- Give Phoenix Purpur or he will find you and he will meow at you until he gets it :3"/></TextBlock>
+            <TextBlock Canvas.Left="393" TextWrapping="Wrap" Canvas.Top="476" FontSize="16" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Height="21" Width="221" Text="Patch Release - Version 2.2"/>
+            <TextBlock Canvas.Left="407" TextWrapping="Wrap" Canvas.Top="499" FontSize="16" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Height="197" Width="935"><Run FontWeight="Normal" Text="- Updated to .NET 4.8"/><LineBreak/><Run FontWeight="Normal" Text="- Added command-line options"/><LineBreak/><Run FontWeight="Normal" Text="- Added multi-threading support"/><LineBreak/><Run FontWeight="Normal" Text="- Added additional console commands"/><LineBreak/><Run FontWeight="Normal" Text="- Added Built in Bootstrapper for Standalone game (configurable with VerucaviaGameSDK --setup) with INI file support"/><LineBreak/><Run FontWeight="Normal" Text="- Added PeanutButter.INI"/><LineBreak/><Run FontWeight="Normal" Text="- Performance Optimizations"/><LineBreak/><Run FontWeight="Normal" Text="- Polished Phoenix's cybernetics ùwú"/><LineBreak/><Run FontWeight="Normal"/><LineBreak/><LineBreak/><Run FontWeight="Normal"/></TextBlock>
+            <TextBlock Canvas.Left="393" TextWrapping="Wrap" Canvas.Top="692" FontSize="16" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Height="21" Width="221"><Run Text="Patch Release - Version 2.3"/><LineBreak/><Run/></TextBlock>
+            <TextBlock Canvas.Left="407" TextWrapping="Wrap" Canvas.Top="716" FontSize="16" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Height="124" Width="700"><Run FontWeight="Normal" Text="- Seperated INI and DLL files into their own subdirectories"/><LineBreak/><Run FontWeight="Normal" Text="- Fixed a major issue where the application suddenly lost all it's UI art."/></TextBlock>
+        </Canvas>
+    </Grid>
+</UserControl>

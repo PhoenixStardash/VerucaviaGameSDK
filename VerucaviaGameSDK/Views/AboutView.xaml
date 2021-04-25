@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="VerucavaGameSDK.Views.AboutView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VerucavaGameSDK.Views"
+             xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="1600">
+    <Grid>
+        <Grid>
+            <Canvas x:Name="MainWindowCanvas" HorizontalAlignment="Left" Height="862" Margin="4,4,0,0" VerticalAlignment="Top" Width="1585.8">
+                <Rectangle Fill="#BF151515" Height="903" Canvas.Left="332" Stroke="#00000000" Width="1266" Canvas.Top="-21" Opacity="0"/>
+                <TextBlock x:Name="CurrentPage" Canvas.Left="1500" TextWrapping="Wrap" Text="ABOUT" Canvas.Top="31" FontSize="14" FontWeight="Bold" Foreground="White"/>
+                <TextBlock Canvas.Left="419" TextWrapping="Wrap" Text="Credits" Canvas.Top="59" FontSize="32" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Width="387"/>
+                <Image Height="64" Canvas.Left="415" Canvas.Top="115" Width="64" Source="Phoenix.png"/>
+                <TextBlock Canvas.Left="488" TextWrapping="Wrap" Text="Creator of Verucavia Game SDK, Programmer and UI Designer, Also likes Purpur!" Canvas.Top="131" Height="74" Width="447" Foreground="White" FontSize="18"/>
+                <TextBlock Canvas.Left="488" TextWrapping="Wrap" Text="⫷⌬Royal Phoenix™⌬⫸" Canvas.Top="114" Height="28" Width="153" Foreground="White"/>
+                <Image Height="64" Canvas.Left="415" Canvas.Top="204" Width="64" Source="TechNick.png" RenderTransformOrigin="0.516,0.281"/>
+                <TextBlock Canvas.Left="488" TextWrapping="Wrap" Text="«♡TechNick♡»" Canvas.Top="204" Height="28" Width="153" Foreground="#FF0097FF"/>
+                <TextBlock Canvas.Left="488" TextWrapping="Wrap" Text="Verucavia: New Age Logo Designer, An all around great person and like a brother :3" Canvas.Top="219" Height="74" Width="513" Foreground="White" FontSize="18"/>
+                <TextBlock Canvas.Left="419" TextWrapping="Wrap" Text="Technologies" Canvas.Top="308" FontSize="32" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Width="387"/>
+                <Image Height="64" Canvas.Left="419" Canvas.Top="369" Width="64" Source="FluentDesign.png" RenderTransformOrigin="0.516,0.281"/>
+                <TextBlock Canvas.Left="488" TextWrapping="Wrap" Text="FluentWPF" Canvas.Top="367" Height="28" Width="280" Foreground="#FF8DACFF"/>
+                <TextBlock Canvas.Left="488" TextWrapping="Wrap" Text="Fluent Design System for WPF" Canvas.Top="380" Height="26" Width="513" Foreground="White" FontSize="18"/>
+                <Image Height="30" Canvas.Left="489" Canvas.Top="403" Width="30" Source="GitHub-Mark-Light-120px-plus.png" RenderTransformOrigin="0.516,0.281"/>
+                <Button x:Name="buttonLinkGithub1" Content="" Height="30" Canvas.Left="489" Canvas.Top="403" Width="30" Click="buttonLinkGithub1_Click" Background="Transparent" Opacity="0" Style="{StaticResource ButtonRevealStyle}" ToolTip="Github Repository"/>
+                <Image Height="30" Canvas.Left="524" Canvas.Top="403" Width="30" Source="NuGet.png" RenderTransformOrigin="0.516,0.281"/>
+                <Button x:Name="nugetButton" Content="" Height="30" Canvas.Left="524" Canvas.Top="403" Width="30" Click="nugetButton_Click" Background="Transparent" Opacity="0" Style="{StaticResource ButtonRevealStyle}" ToolTip="Download from NuGet.org"/>
+                <Image Height="64" Canvas.Left="419" Canvas.Top="446" Width="64" Source="c-sharp.png" RenderTransformOrigin="0.516,0.281"/>
+                <TextBlock Canvas.Left="488" TextWrapping="Wrap" Text="C#" Canvas.Top="446" Height="28" Width="280" Foreground="#FF9136FF"/>
+                <TextBlock Canvas.Left="488" TextWrapping="Wrap" Text="Project was entirely written with C#, fairly easy to learn." Canvas.Top="460" Height="26" Width="513" Foreground="White" FontSize="18"/>
+                <TextBlock Canvas.Left="489" TextWrapping="Wrap" Text="Windows Presentation Framework" Canvas.Top="514" Height="28" Width="280" Foreground="#FF30AAFF"/>
+                <TextBlock Canvas.Left="489" TextWrapping="Wrap" Text="Replacement for Winforms for C#" Canvas.Top="529" Height="26" Width="513" Foreground="White" FontSize="18"/>
+                <Image Height="64" Canvas.Left="420" Canvas.Top="517" Width="64" Source="WPF.png" RenderTransformOrigin="0.516,0.281"/>
+            </Canvas>
+        </Grid>
+    </Grid>
+</UserControl>

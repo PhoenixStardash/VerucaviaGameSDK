@@ -1,0 +1,38 @@
+﻿<fw:AcrylicWindow x:Class="VerucavaGameSDK.ConsoleBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VerucavaGameSDK"
+        xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+        mc:Ignorable="d"
+        Title="Developer Console" Height="768" Width="1366" ResizeMode="CanMinimize" NoiseOpacity="0" Icon="Icons/Console.ico">
+    <Grid fw:PointerTracker.Enabled="True" Background="#701E1E1E" Opacity="0.7">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="97*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="452*"/>
+            <ColumnDefinition Width="101*"/>
+            <ColumnDefinition Width="352*"/>
+            <ColumnDefinition Width="48*"/>
+            <ColumnDefinition Width="44*"/>
+            <ColumnDefinition Width="364*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="consoleInput" Margin="33,267,44,-2" Grid.Row="2" TextWrapping="Wrap" BorderThickness="0" Background="#701E1E1E" Foreground="#FFFFD100" BorderBrush="#00ABADB3" SelectionBrush="#000078D7" TextOptions.TextHintingMode="Fixed" FontWeight="Medium" Padding="1,11,5,6" FontFamily="Consolas" AutomationProperties.IsRequiredForForm="True" KeyDown="consoleInput_KeyDown" Grid.ColumnSpan="6" Style="{StaticResource TextBoxRevealStyle}" FontSize="12"/>
+        <RichTextBox x:Name="consoleHistory" HorizontalAlignment="Left" Height="705" VerticalAlignment="Top" Width="1366" Grid.ColumnSpan="6" Grid.RowSpan="3" Background="#701E1E1E" BorderBrush="Transparent" Foreground="White" SelectionBrush="#000078D7" IsReadOnly="True" IsUndoEnabled="False" FontFamily="Consolas" Padding="10,10,5,5" Margin="-1,-2,-4,0" BorderThickness="0">
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </RichTextBox.Resources>
+            <FlowDocument>
+                <Paragraph/>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="consoleRun" Content="&gt;&gt;" Grid.Column="5" HorizontalAlignment="Left" Margin="320,267,-1,-2" Grid.Row="2" VerticalAlignment="Top" Width="45" Height="38" Background="#701E1E1E" Foreground="White" BorderBrush="Transparent" Click="consoleRun_Click" ToolTip="Run command" Style="{StaticResource ButtonRevealStyle}"/>
+        <TextBox x:Name="consoleInput_Copy" Height="38" Margin="0,267,419,-2" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" BorderThickness="0" Background="#701E1E1E" Foreground="#FF74FF00" BorderBrush="#00ABADB3" SelectionBrush="#000078D7" TextOptions.TextHintingMode="Fixed" FontWeight="Medium" Padding="8,7,5,6" FontFamily="Consolas" Text="&gt; " AutomationProperties.IsRequiredForForm="True" IsReadOnly="True" FontSize="16" />
+    </Grid>
+</fw:AcrylicWindow>

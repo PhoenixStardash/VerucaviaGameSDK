@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="VerucavaGameSDK.Views.UE4View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VerucavaGameSDK.Views"
+             xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="1600">
+    <Grid>
+        <Grid>
+            <Canvas x:Name="MainWindowCanvas" HorizontalAlignment="Left" Height="862" Margin="4,4,0,0" VerticalAlignment="Top" Width="1585.8">
+                <Rectangle Fill="#BF151515" Height="903" Canvas.Left="332" Stroke="#00000000" Width="1275" Canvas.Top="-16" Opacity="0"/>
+                <TextBlock x:Name="CurrentPage" Canvas.Left="1422" TextWrapping="Wrap" Text="UNREAL ENGINE 4" Canvas.Top="31" FontSize="14" FontWeight="Bold" Foreground="White"/>
+                <TextBlock Canvas.Left="393" TextWrapping="Wrap" Text="Editors" Canvas.Top="33" FontSize="32" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Width="460"/>
+                <Button x:Name="ue426Button" Content="Unreal Engine 4" Canvas.Left="395" Canvas.Top="81" Width="231" Height="48" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="-25,0,0,10" Click="ue426Button_Click" Foreground="White"/>
+                <TextBlock Canvas.Left="447" TextWrapping="Wrap" Text="4.26.1 (EGL)" Canvas.Top="106" Foreground="White" RenderTransformOrigin="9.097,0.562"/>
+                <TextBlock Canvas.Left="393" TextWrapping="Wrap" Text="General" Canvas.Top="158" FontSize="32" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Width="460"/>
+                <Button x:Name="configButton" Content="Configure Project" Canvas.Left="395" Canvas.Top="201" Width="231" Height="48" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="-25,0,0,10" Click="configButton_Click" Foreground="White"/>
+                <TextBlock Canvas.Left="440" TextWrapping="Wrap" Text="DefaultEngine.ini (Current Project)" Canvas.Top="227" Foreground="White" Width="186"/>
+                <Button x:Name="uprojectEditButton" Content="Edit Project File" Canvas.Left="631" Canvas.Top="201" Width="231" Height="48" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="-25,0,0,10" Click="uprojectEditButton_Click" Foreground="White"/>
+                <TextBlock Canvas.Left="683" TextWrapping="Wrap" Text="Current Unreal Project" Canvas.Top="228" Foreground="White"/>
+                <Image Height="32" Canvas.Left="641" Canvas.Top="210" Width="32" Source="ic_fluent_settings_32.png"/>
+                <Button x:Name="pluginsButton" Content="Engine Plugins" Canvas.Left="867" Canvas.Top="201" Width="231" Height="48" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="-25,0,0,10" Click="pluginsButton_Click" Foreground="White"/>
+                <Image Height="32" Canvas.Left="878" Canvas.Top="210" Width="32" Source="ic_fluent_apps_add_in_24.png" RenderTransformOrigin="5.688,0.438"/>
+                <TextBlock Canvas.Left="393" TextWrapping="Wrap" Text="Launch Tools" Canvas.Top="332" FontSize="32" RenderTransformOrigin="0.327,-0.296" FontWeight="Bold" Foreground="White" Width="460"/>
+                <Button x:Name="launchEditorButton" Content="Launch" Canvas.Left="395" Canvas.Top="375" Width="231" Height="48" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="-90,0,0,10" Click="launchEditorButton_Click" Foreground="White"/>
+                <TextBlock Canvas.Left="442" TextWrapping="Wrap" Text="UE4 Editor" Canvas.Top="401" Foreground="White" Width="57"/>
+                <Image Height="32" Canvas.Left="402" Canvas.Top="211" Width="32" Source="ic_fluent_settings_32.png"/>
+                <Button x:Name="launchStandaloneButton" Content="Launch" Canvas.Left="631" Canvas.Top="375" Width="231" Height="48" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="-90,0,0,10" Click="launchStandaloneButton_Click" Foreground="White"/>
+                <TextBlock Canvas.Left="678" TextWrapping="Wrap" Text="Standalone" Canvas.Top="402" Foreground="White" Width="62"/>
+                <Image Height="32" Canvas.Left="638" Canvas.Top="383" Width="32" Source="ic_fluent_play_32_regular.png"/>
+                <Button x:Name="restartButton" Content="Restart" Canvas.Left="867" Canvas.Top="376" Width="231" Height="48" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="-75,0,0,10" Click="restartButton_Click" Foreground="White"/>
+                <TextBlock Canvas.Left="921" TextWrapping="Wrap" Text="Unreal Editor" Canvas.Top="402" Foreground="White" Width="73"/>
+                <Button x:Name="quitButton" Content="Quit" Canvas.Left="1103" Canvas.Top="376" Width="231" Height="48" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="-90,0,0,10" Click="quitButton_Click" Foreground="White"/>
+                <TextBlock Canvas.Left="1160" TextWrapping="Wrap" Text="Unreal Editor" Canvas.Top="402" Foreground="White" Width="74"/>
+                <Image Height="32" Canvas.Left="1117" Canvas.Top="383" Width="32" Source="ic_fluent_power_32_regular.png"/>
+                <Button x:Name="contentFolderButton" Content="Content Folder" Canvas.Left="1103" Canvas.Top="201" Width="231" Height="48" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="-25,0,0,10" Click="contentFolderButton_Click" Foreground="White"/>
+                <TextBlock Canvas.Left="1157" TextWrapping="Wrap" Text="Current Unreal Project" Canvas.Top="226" Foreground="White" RenderTransformOrigin="10.355,1.312" Width="122"/>
+                <Image Height="32" Canvas.Left="1117" Canvas.Top="210" Width="32" Source="ic_fluent_folder_48_regular.png" RenderTransformOrigin="5.688,0.438"/>
+                <Button x:Name="screenshotsButton" Content="Open Screenshots Folder" Canvas.Left="395" Canvas.Top="266" Width="231" Height="48" Background="Transparent" Style="{StaticResource ButtonRevealStyle}" FontSize="14" FontWeight="Bold" Padding="25,0,0,10" Click="screenshotsButton_Click" Foreground="White"/>
+                <TextBlock Canvas.Left="441" TextWrapping="Wrap" Canvas.Top="292" Foreground="White" RenderTransformOrigin="10.355,1.312" Width="119" Height="13"><Run Text="Current Unreal Project"/><LineBreak/><Run/></TextBlock>
+                <Image Height="32" Canvas.Left="402" Canvas.Top="273" Width="32" Source="ic_fluent_folder_48_regular.png" RenderTransformOrigin="5.688,0.438"/>
+                <Image Height="32" Canvas.Left="406" Canvas.Top="89" Width="32" Source="ue4.png"/>
+                <Image Height="32" Canvas.Left="399" Canvas.Top="383" Width="32" Source="ic_fluent_play_32_regular.png"/>
+                <Image Height="32" Canvas.Left="877" Canvas.Top="384" Width="32" Source="ic_fluent_arrow_clockwise_32_regular.png"/>
+            </Canvas>
+        </Grid>
+    </Grid>
+</UserControl>
