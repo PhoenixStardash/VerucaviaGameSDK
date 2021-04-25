@@ -28,6 +28,8 @@ If you're too lazy to do any thing below, Compiled binaries can be found [here](
 - Add additional command-line parameters
 - Ability to add your own programs
 - Config support
+- Include a custom UE4 editor
+- Creating mods
 
 # Credits
 - Microsoft for Fluent Design Icons
