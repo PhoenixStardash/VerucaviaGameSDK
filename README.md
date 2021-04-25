@@ -26,3 +26,6 @@ Welcome to the repository for my SDK!
 - Add additional command-line parameters
 - Ability to add your own programs
 - Config support
+
+# Credits
+- Microsoft for Fluent Design Icons
