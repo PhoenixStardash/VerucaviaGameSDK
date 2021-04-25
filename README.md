@@ -1,6 +1,8 @@
 # Verucavia: New Age Official Game SDK
 Welcome to the repository for my SDK!
 
+Compiled binaries can be found [here](http://verucaviagame.ddns.net:90/files/apps/release/VerucaviaGameSDK-2.2_release.7z)
+
 # Getting Started
 ### Pre-Requisies
 - [.NET 4.8 Targetting Pack](https://dotnet.microsoft.com/download/dotnet-framework/net48)
