@@ -16,6 +16,13 @@ Welcome to the repository for my SDK!
 - Support for DX10 or higher
 
 # Features
+### Current
 - Configurable via an INI file
 - Command-line support
 - A sleek, modern look, mimmicing Fluent Design apps seen in Windows 10
+
+### Planned
+- Add support for Unity3D
+- Add additional command-line parameters
+- Ability to add your own programs
+- Config support
