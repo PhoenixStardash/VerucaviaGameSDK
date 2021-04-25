@@ -33,6 +33,8 @@ Welcome to the repository for my SDK!
 # Command Line Use
 ### Available command line arguments
 ```
+Syntax: VerucaviaNewAgeSDK.exe [noSwitchForAppStart] [--help] [--about] [--verifyconfig] [--setup] [--launch] [--build]
+
 --help           Prints the help message
 --about          Shows the application's version and build config
 --verifyconfig   For debugging perposes, to wonder why the app crashed.
