@@ -29,3 +29,13 @@ Welcome to the repository for my SDK!
 
 # Credits
 - Microsoft for Fluent Design Icons
+
+# Command Line Use
+### Available command line arguments
+
+--help           Prints the help message
+--about          Shows the application's version and build config
+--verifyconfig   For debugging perposes, to wonder why the app crashed.
+--setup          Use this to set the game path and optional launch arguments.
+--launch         Launch Verucavia: New Age
+--build          Builds Verucavia: New Age by using Unreal Automation Tool
